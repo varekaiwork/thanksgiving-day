@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://buff.bet/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,900;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Halloween</title>
+  </head>
+  <body>
+    <div class="content">
+      <img class="leaf-1" src="img/Leafs-1.png" alt="leafs-1" />
+      <img class="leaf-2" src="img/Leafs-2.png" alt="leafs-2" />
+      <img class="pumpcin" src="img/Pumpcin.png" alt="Pumpcin" />
+      <img class="lantern swingimage" src="img/Lantern.png" alt="Lantern" />
+      <div class="container">
+        <div class="content__inner">
+          <div class="content-main">
+            <div class="content-main__left">
+              <img src="img/text.png" alt="Thanksgiving Day" />
+              <div class="content-main__title">Welcome to the “Thanksgiving” tournament at BUFF.bet!</div>
+              <div class="content-main__text">The tournament will take place from 27.10.2020 until 5.11.2020, during this time all players that have deposited during October 2020 or during the promotion will participate automatically and will accumulate points that will be displayed on our tournament page (updated daily).</div>
+              <div class="content-main__rules">Point can only be accumulated during the time period of 27th October 2020 and 5th November 2020. On the 6th of November we will declare the top 5 nominees by accumulated points and pay out the cash prizes in their BUFF.bet accounts.</div>
+              <div class="content-main__btns"><a href="#" class="leader-btn">LEADERBORRDS</a><a class="terms" id="terms">terms apply*</a></div>
+            </div>
+
+            <div class="content-main__right">
+              <img src="img/main.png" alt="main" />
+            </div>
+          </div>
+          <div class="content-steps">
+            <div class="step step-1"><span>1</span> <a href="https://buff.bet/en/login"> Login</a> to your account</div>
+            <div class="step step-2">
+              <img class="turkey" src="img/Turkey.png" alt="Turkey" />
+              <span>2</span>
+              Have at least 1 deposit during October
+            </div>
+            <div class="step step-3"><span>3</span> Play the games that you like and accumulate points</div>
+          </div>
+          <div class="content-footer">
+            <div>For every 10 euro bet in sports or esports, you will receive 1 point in the sportsbook category.</div>
+            <div>For every 10 euro bet in casino games, you will receive 1 point in the casino category.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function getParameterByName() {
+        return window.location.href.replace(/.*btag=/gi, '')
+      }
+      function setCookie(e, t, o) {
+        var n = ''
+        if (o) {
+          var i = new Date()
+          i.setTime(i.getTime() + 24 * o * 60 * 60 * 1e3), (n = '; expires=' + i.toUTCString())
+        }
+        document.cookie = e + '=' + (t || '') + n + '; domain=.buff.bet;path=/'
+      }
+      function getCookie(e) {
+        for (var t = e + '=', o = document.cookie.split(';'), n = 0; n < o.length; n++) {
+          for (var i = o[n]; ' ' == i.charAt(0); ) i = i.substring(1, i.length)
+          if (0 == i.indexOf(t)) return i.substring(t.length, i.length)
+        }
+        return null
+      }
+      function eraseCookie(e) {
+        document.cookie = e + '=; Max-Age=-99999999;'
+      }
+      setCookie('btag', getParameterByName(), 7)
+    </script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
