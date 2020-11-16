@@ -7,19 +7,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #fff;
 }
 
-// :root {
-//   font-size: 1px;
-// }
+:root {
+  font-size: 1px;
+}
 
 .container {
-  max-width: 1620px;
+  max-width: 1620rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
 }
 .content__inner {
   display: flex;
@@ -30,20 +29,20 @@
 }
 .content-main {
   display: flex;
-  margin-top: 140px;
+  margin-top: 140rem;
 }
 .content-main__left {
   display: flex;
   flex-direction: column;
-  max-width: 905px;
+  max-width: 905rem;
   width: 100%;
   text-align: center;
 }
 .leaf-1 {
   position: absolute;
   left: 0;
-  width: 150px;
-  top: 54px;
+  width: 150rem;
+  top: 54rem;
 }
 .leaf-2 {
   position: absolute;
@@ -52,7 +51,7 @@
 }
 .pumpcin {
   position: absolute;
-  top: 38px;
+  top: 38rem;
   left: 50%;
 }
 
@@ -80,24 +79,24 @@
 
 .content-main__title {
   font-weight: 900;
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 28rem;
+  margin-bottom: 15rem;
 }
 .content-main__text {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 22rem;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 15rem;
 }
 .content-main__rules {
-  font-size: 22px;
+  font-size: 22rem;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 40rem;
 }
 
 .content-main__right {
-  margin-left: 117px;
+  margin-left: 117rem;
 }
 .content-main__btns {
   a {
@@ -107,10 +106,10 @@
 }
 .leader-btn {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 36rem;
   position: relative;
-  width: 350px;
-  padding: 19px 51px;
+  width: 350rem;
+  padding: 19rem 51rem;
   z-index: 1;
   &::before {
     z-index: -1;
@@ -127,15 +126,15 @@
 }
 
 .terms {
-  margin-left: 25px;
-  font-size: 28px;
+  margin-left: 25rem;
+  font-size: 28rem;
   font-weight: 500;
 }
 
 .content-steps {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 48px;
+  margin-bottom: 48rem;
 }
 .step {
   display: flex;
@@ -143,10 +142,10 @@
   align-items: center;
   z-index: 1;
   position: relative;
-  width: 445px;
-  height: 120px;
+  width: 445rem;
+  height: 120rem;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 22rem;
   &::before {
     z-index: -1;
     position: absolute;
@@ -156,36 +155,65 @@
     right: 0;
     bottom: 0;
     background: rgba(15, 21, 33, 0.8);
-    width: 445px;
-    height: 120px;
+    width: 445rem;
+    height: 120rem;
     transform: skew(-10deg);
-    border-left: 20px solid #fe7530;
+    border-left: 20rem solid #fe7530;
   }
   span {
-    font-size: 72px;
+    font-size: 72rem;
     font-weight: 900;
-    margin-right: 30px;
-    margin-left: 50px;
+    margin-right: 30rem;
+    margin-left: 50rem;
   }
   a {
     text-decoration: none;
-    margin-right: 5px;
+    margin-right: 5rem;
     color: #ffa32e;
   }
 }
 
 .turkey {
+  width: 300px;
   position: absolute;
   top: -83%;
-  left: 50%;
+  left: 30%;
 }
 
 .content-footer {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 24rem;
   font-style: italic;
   text-align: center;
   div {
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  :root {
+    font-size: 0.9px;
+  }
+}
+@media (max-width: 1600px) {
+  .leaf-1 {
+    top: 15rem;
+  }
+  .lantern {
+    right: 29%;
+  }
+}
+@media (max-width: 1500px) {
+  .content-main__right {
+    display: none;
+  }
+  .lantern {
+    right: 5%;
+  }
+  .content-main {
+    justify-content: center;
+    margin-right: 150rem;
+    margin-top: 0;
+    margin-bottom: 100rem;
   }
 }
