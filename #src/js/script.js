@@ -4,10 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const popupBg = document.querySelector('.popup')
   const close = document.querySelector('#close')
   const content =document.querySelector('.content')
-
- 
-
-
+  
   function closed(){
     popupBg.classList.remove("visible")
     content.classList.remove('overflow')
