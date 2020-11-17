@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){ 
-  const open = document.querySelector("#open_popup")
-  const popupBg = document.querySelector('.popup-bg')
+  const open = document.querySelector("#terms")
+  const popupBg = document.querySelector('.popup')
   const close = document.querySelector('#close')
   const content =document.querySelector('.content')
 
